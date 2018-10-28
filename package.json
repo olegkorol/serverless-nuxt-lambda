@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nuxt",
-    "deploy": "nuxt build && sls deploy"
+    "start:dev": "nuxt",
+    "build": "nuxt build",
+    "deploy": "npm run build && sls deploy"
   },
   "keywords": [],
   "author": "Oleg Korol <oleg@olegkorol.de>",
